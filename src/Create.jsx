@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { addUser } from "./UserReducer";
+import { useDispatch } from "react-redux";
 
 function Create() {
   const [name, setName] = useState("");
