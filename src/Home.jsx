@@ -17,7 +17,19 @@ function Home() {
             <th>Action</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          {users.map((user, index) => {
+            <tr key={index}>
+              <td>{user.id}</td>
+              <td>{user.name}</td>
+              <td>{user.email}</td>
+              <td>
+                <button className="btn btn-sm btn-primary">Edit</button>
+                <button className="btn btn-sm btn-danger ms-2">Delete</button>                
+              </td>
+            </tr>;
+          })}
+        </tbody>
       </table>
     </div>
   );
