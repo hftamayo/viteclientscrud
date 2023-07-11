@@ -18,17 +18,17 @@ function Home() {
           </tr>
         </thead>
         <tbody>
-          {users.map((user, index) => {
+          {users.map((user, index) => (
             <tr key={index}>
               <td>{user.id}</td>
               <td>{user.name}</td>
               <td>{user.email}</td>
               <td>
                 <button className="btn btn-sm btn-primary">Edit</button>
-                <button className="btn btn-sm btn-danger ms-2">Delete</button>                
+                <button className="btn btn-sm btn-danger ms-2">Delete</button>
               </td>
-            </tr>;
-          })}
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
