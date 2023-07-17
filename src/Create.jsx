@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import { addUser } from "./UserReducer";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 function Create() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const users = useSelector((state) => state.users);
+  const dispatch = useDispatch();
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    dispatch(
+      addUser({ id: users[users.length - 1].id + 1, name, email })
+    );
   };
   return (
     <div className="d-flex w-100 vh-100 justify-content-center align-items-center">
