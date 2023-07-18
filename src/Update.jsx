@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate, useParams } from "react-router-dom";
 import { updateUser } from "./UserReducer";
 
 function Update() {
@@ -10,9 +10,19 @@ function Update() {
   const { name, email } = existingUser[0];
   const [uname, setName] = useState(name);
   const [uemail, setEmail] = useState(email);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleUpdate = (event) => {
     event.preventDefault();
+    dispatch(
+      updateUser({
+        id: id,
+        name: uname,
+        email: uemail,
+      })
+    );
+    navigate("/");
   };
 
   return (
