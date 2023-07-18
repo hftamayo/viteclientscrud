@@ -8,7 +8,9 @@ function Home() {
   return (
     <div className="container">
       <h2>Clients List</h2>
-      <Link to="/create" className="btn btn-success my-3">Create +</Link>
+      <Link to="/create" className="btn btn-success my-3">
+        Create +
+      </Link>
       <table className="table">
         <thead>
           <tr>
@@ -25,7 +27,12 @@ function Home() {
               <td>{user.name}</td>
               <td>{user.email}</td>
               <td>
-                <Link to={`/edit/${user.id}`} className="btn btn-sm btn-primary">Edit</Link>
+                <Link
+                  to={`/edit/${user.id}`}
+                  className="btn btn-sm btn-primary"
+                >
+                  Edit
+                </Link>
                 <button className="btn btn-sm btn-danger ms-2">Delete</button>
               </td>
             </tr>
