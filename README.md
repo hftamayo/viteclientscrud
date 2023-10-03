@@ -9,7 +9,7 @@ CRUD Operations based on User's model
 
 ### Technical Stack ###
 * Data storage: in memory (array) 
-* FrontEnd: React JS 
+* FrontEnd: React JS and Bootstrap 
 * State management: Redux
 * Built using: Vite
 * Architecture: To be defined 
