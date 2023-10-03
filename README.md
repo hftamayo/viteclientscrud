@@ -30,6 +30,9 @@ CRUD Operations based on User's model
 * Unstable: sourcecode that is in progress of testing
 * Experimental: sourcecode in progress
 
+## Snapshots ##
+![localhost](./snapshots/view.png)
+![localhost/create](./snapshots/add.png)
 
 ## Proof of Concept ##
 [Todo]
@@ -38,3 +41,5 @@ CRUD Operations based on User's model
 ## Bugs ##
 Please refer to the Issues section in this repository
 
+## References ##
+[Original Video](https://youtu.be/DOkSU3yg4vQ?si=7vGRjEvPzWsPC-bJ)
