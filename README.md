@@ -1,6 +1,6 @@
-# Users CRUD Application #
+# Clients CRUD Application #
 
-CRUD Operations based on User's model
+CRUD Operations based on Client's model
 
 ## Concept ##
 - Basic Crud Operations
